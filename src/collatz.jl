@@ -23,3 +23,17 @@ function max_stop_time(t::Int)
     end
     return findmax(w)
  end
+
+ function max_stop_time_02(t::Int)
+    l = (0,[])
+    Threads.@threads for i in 1:t
+        m = stop_time(i)
+        if length(m) > length(l[2])
+             l = (i,m)
+        end 
+    end
+    return l[1],length(l[2])
+ end
+
+
+
