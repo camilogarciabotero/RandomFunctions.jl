@@ -3,8 +3,8 @@
 [![Build Status](https://travis-ci.com/camilogarciabotero/RandomFunctions.jl.svg?branch=master)](https://travis-ci.com/camilogarciabotero/RandomFunctions.jl)
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/camilogarciabotero/RandomFunctions.jl?svg=true)](https://ci.appveyor.com/project/camilogarciabotero/RandomFunctions-jl)
 [![Coverage](https://codecov.io/gh/camilogarciabotero/RandomFunctions.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/camilogarciabotero/RandomFunctions.jl)
-
-# Intallation
+[![CI](https://github.com/camilogarciabotero/RandomFunctions.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/camilogarciabotero/RandomFunctions.jl/actions/workflows/CI.yml)
+# Installation
 
 As this is an unregistered package, installation should procceed this way:
 
@@ -30,7 +30,7 @@ julia> @time max_stop_time(10^6)
 12.684547 seconds (97.56 M allocations: 4.382 GiB, 62.37% gc time)
 (524, 837799)
 ```
-A second version of the function reduces memory siginifantly and increasses speed:
+A second version of the function reduces memory siginificantly and increasses speed:
 ```jl
 julia> @time max_stop_time_02(10^7)
 ```
