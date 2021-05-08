@@ -33,7 +33,8 @@ A second version of the function reduces memory siginifantly and increasses spee
 ```jl
 julia> @time max_stop_time_02(10^7)
 ```
-```19.539113 seconds (1.23 G allocations: 52.362 GiB, 49.46% gc time)
+```
+19.539113 seconds (1.23 G allocations: 52.362 GiB, 49.46% gc time)
 (8400511, 685)
 ```
 In this example the number with more steps is **8400511** and it needs **685** steps before reach 1.
