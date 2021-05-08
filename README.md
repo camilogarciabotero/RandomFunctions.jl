@@ -28,6 +28,7 @@ julia> @time max_stop_time(10^6)
 ```
 ```
 12.684547 seconds (97.56 M allocations: 4.382 GiB, 62.37% gc time)
+(524, 837799)
 ```
 A second version of the function reduces memory siginifantly and increasses speed:
 ```jl
