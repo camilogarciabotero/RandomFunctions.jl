@@ -18,7 +18,7 @@ pkg> add https://github.com/camilogarciabotero/RandomFunctions.jl
 julia> using RandomFunctions
 julia> max_stop_time(100)
 ```
-Output shows the stop time and largest natural number between 1 and 100
+Output shows the stop time, that is the number of steps that a number make before reaching 1, and the associated number number between 1 and 100 that has the largest number of steps:
 ```
 (118, 97)
 ```
