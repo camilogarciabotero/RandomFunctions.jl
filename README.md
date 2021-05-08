@@ -6,8 +6,10 @@
 
 # Intallation
 
+As this is an unregistered package, installation should procceed this way:
+
 ```jl
-pkg> add RandomFunctions
+pkg> add https://github.com/camilogarciabotero/RandomFunctions.jl
 ```
 # Challenges and code
 ## Collatz conjecture
