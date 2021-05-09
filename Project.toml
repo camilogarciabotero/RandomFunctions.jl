@@ -1,7 +1,7 @@
 name = "RandomFunctions"
 uuid = "ccc3390e-0675-40fc-8b56-b6e685de3a1c"
 authors = ["Camilo García"]
-version = "0.1.0"
+version = "0.0.2"
 
 [deps]
 
