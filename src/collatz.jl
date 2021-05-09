@@ -1,4 +1,5 @@
-function stop_time(t::Int)
+function collatz_steps(t::Int)
+    t < 1 && throw(DomainError(t))
     s = []
     while true
         if t % 2 == 0
@@ -25,6 +26,7 @@ function collatz_steps_02(t::Int)
 end
 
 function max_stop_time(t::Int)
+    t < 1 && throw(DomainError(t))
     l = []
     w = []
     for i in 1:t
@@ -37,6 +39,7 @@ function max_stop_time(t::Int)
  end
 
 function max_stop_time_02(t::Int)
+    t < 1 && throw(DomainError(t))
     l = (0,[])
     Threads.@threads for i in 1:t
         m = stop_time(i)
