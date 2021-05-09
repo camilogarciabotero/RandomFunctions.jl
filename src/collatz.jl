@@ -30,7 +30,7 @@ function max_stop_time(t::Int)
     l = []
     w = []
     for i in 1:t
-        push!(l, stop_time(i))
+        push!(l, collatz_steps(i))
     end
     for j in l
         push!(w, length(j))
@@ -42,7 +42,7 @@ function max_stop_time_02(t::Int)
     t < 1 && throw(DomainError(t))
     l = (0,[])
     Threads.@threads for i in 1:t
-        m = stop_time(i)
+        m = collatz_steps(i)
         if length(m) > length(l[2])
              l = (i,m)
         end 
