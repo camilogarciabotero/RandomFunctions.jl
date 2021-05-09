@@ -11,7 +11,19 @@ function stop_time(t::Int)
     end
     return s
 end
- 
+
+function collatz_steps_02(t::Int)
+    t < 1 && throw(DomainError(t))
+    s = []
+    collatz = (x) -> iseven(x) ? x ÷ 2 : 3x + 1
+    while true 
+        t = collatz(t)
+        push!(s,t)
+        t == 1 && break
+    end
+    return s
+end
+
 function max_stop_time(t::Int)
     l = []
     w = []
