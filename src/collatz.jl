@@ -4,7 +4,7 @@ function stop_time(t::Int)
         if t % 2 == 0
             t = t ÷ 2
         else
-            t = 3*t + 1
+            t = 3t + 1
         end
         push!(s,t)
         t == 1 && break
