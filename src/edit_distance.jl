@@ -18,7 +18,7 @@ of changes of two stringsn when both display different lengths:
 This functions outputs the edit distance and the alignment matrix as well.
 """
 function edit_distance(s1::String, s2::String)
-    D = zeros(length(s1)+1,length(s2)+1)
+    D::Array = zeros(length(s1)+1,length(s2)+1)
     D[:,1]= 0:length(s1) 
     D[1,:] = 0:length(s2)
     for i in 2:length(s1)+1
