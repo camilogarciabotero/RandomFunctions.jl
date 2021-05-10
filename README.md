@@ -1,5 +1,6 @@
 # RandomFunctions
 
+[![Latest Release](https://img.shields.io/github/release/camilogarciabotero/RandomFunctions.jl.svg)](https://github.com/camilogarciabotero/RandomFunctions.jl/releases/latest)
 [![Build Status](https://travis-ci.com/camilogarciabotero/RandomFunctions.jl.svg?branch=main)](https://travis-ci.com/camilogarciabotero/RandomFunctions.jl)
 [![codecov](https://codecov.io/gh/camilogarciabotero/RandomFunctions.jl/branch/main/graph/badge.svg?token=4oLhs2LF6D)](https://codecov.io/gh/camilogarciabotero/RandomFunctions.jl)
 [![CI](https://github.com/camilogarciabotero/RandomFunctions.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/camilogarciabotero/RandomFunctions.jl/actions/workflows/CI.yml)
