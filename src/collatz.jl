@@ -1,4 +1,4 @@
-function collatz_steps(t::Int)
+function collatz_steps(t::Int64)
     t < 1 && throw(DomainError(t))
     s = []
     while true
@@ -13,7 +13,7 @@ function collatz_steps(t::Int)
     return s
 end
 
-function collatz_steps_02(t::Int)
+function collatz_steps_02(t::Int64)
     t < 1 && throw(DomainError(t))
     s = []
     collatz = (x) -> iseven(x) ? x ÷ 2 : 3x + 1
@@ -25,7 +25,7 @@ function collatz_steps_02(t::Int)
     return s
 end
 
-function max_stop_time(t::Int)
+function max_stop_time(t::Int64)
     t < 1 && throw(DomainError(t))
     l = []
     w = []
@@ -38,7 +38,7 @@ function max_stop_time(t::Int)
     return findmax(w)
  end
 
-function max_stop_time_02(t::Int)
+function max_stop_time_02(t::Int64)
     t < 1 && throw(DomainError(t))
     l = (0,[])
     Threads.@threads for i in 1:t
