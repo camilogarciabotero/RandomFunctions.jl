@@ -50,7 +50,7 @@ function max_stop_time_02(t::Int64)
     return l[1],length(l[2])
 end
 
-function max_stop_03(t::Int64)::Tuple{Int64,Int64}
+function max_stop_time_03(t::Int64)::Tuple{Int64,Int64}
     collatz = (x::Int64) -> iseven(x) ? x ÷ 2 : 3x + 1
     eval = (s) ->
     begin
