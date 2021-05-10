@@ -12,3 +12,7 @@ end
 @testset "edit_distance.jl" begin
     @test edit_distance("ATCTCGT", "ACTCCTC")[1] == 3.0
 end
+
+@testset "sieve.jl" begin
+    @test sieve(7) == [1, 3, 5, 7]
+end
