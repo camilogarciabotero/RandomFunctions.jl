@@ -6,6 +6,7 @@ using Test
     @test collatz_steps_02(10) == [5, 16, 8, 4, 2, 1]
     @test max_stop_time(10) == (19,9)
     @test max_stop_time_02(10^7) == (8400511, 685)
+    @test max_stop_time_03(10^7) == (8400511, 685)
 end
 
 @testset "edit_distance.jl" begin
