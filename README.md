@@ -10,12 +10,12 @@ As this is an unregistered package, installation should procceed this way:
 
 ```jl
 pkg> add https://github.com/camilogarciabotero/RandomFunctions.jl
+julia> using RandomFunctions
 ```
 # Challenges and code
 ## Collatz conjecture
 
 ```jl
-julia> using RandomFunctions
 julia> max_stop_time(100)
 ```
 
@@ -60,20 +60,17 @@ julia> edit_distance("ATCTCGT", "ACTCCTC")[1]
 3.0
 ```
 
-The functions is implemented using the dynamic programming paradigm, so it enables getting the alignment matrix:
+## Eratosthenes' sieves
+
+Here we implemented a function to find all primes from _2_ to _n_ using the [Erathostenes](https://en.wikipedia.org/wiki/Eratosthenes) sieve and a _list comprenhension_:
 
 ```jl
-julia> edit_distance("ATCTCGT", "ACTCCTC")[2]
+julia> sieve(5)
 ```
 
 ```
-8×8 Matrix{Float64}:
- 0.0  1.0  2.0  3.0  4.0  5.0  6.0  7.0
- 1.0  0.0  1.0  2.0  3.0  4.0  5.0  6.0
- 2.0  1.0  1.0  1.0  2.0  3.0  4.0  5.0
- 3.0  2.0  1.0  2.0  1.0  2.0  3.0  4.0
- 4.0  3.0  2.0  1.0  2.0  2.0  2.0  3.0
- 5.0  4.0  3.0  2.0  1.0  2.0  3.0  2.0
- 6.0  5.0  4.0  3.0  2.0  2.0  3.0  3.0
- 7.0  6.0  5.0  4.0  3.0  3.0  2.0  3.0
- ```
+3-element Vector{Int64}:
+ 1
+ 3
+ 5
+```
