@@ -7,6 +7,6 @@ include("edit_distance.jl")
 export edit_distance
 
 include("sieve.jl")
-export sieve
+export sieve_01,sieve_02,sieve_03
 
 end

@@ -14,5 +14,7 @@ end
 end
 
 @testset "sieve.jl" begin
-    @test sieve(7) == [2, 3, 5, 7]
+    @test sieve_01(7) == [2, 3, 5, 7]
+    @test sieve_02(7) == [2, 3, 5, 7]
+    @test sieve_03(7) == [2, 3, 5, 7]
 end
