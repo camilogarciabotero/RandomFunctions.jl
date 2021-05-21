@@ -62,7 +62,7 @@ julia> sieve(5)
 
 ```
 3-element Vector{Int64}:
- 1
+ 2
  3
  5
 ```
