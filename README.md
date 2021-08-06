@@ -66,4 +66,3 @@ julia> sieve(5)
  3
  5
 ```
-This is a test using remote connection
