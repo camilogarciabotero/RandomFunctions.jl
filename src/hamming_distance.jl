@@ -1,4 +1,4 @@
-function hamming_distance(x,y)
+function hamming_distance(x::String,y::String)
     @assert length(x) == length(y)
     hd = 0
     for i in 1:length(x)
@@ -8,5 +8,3 @@ function hamming_distance(x,y)
     end
     return hd
 end
-
-hamming_distance(x,y)
