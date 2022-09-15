@@ -18,3 +18,9 @@ end
     @test sieve_02(7) == [2, 3, 5, 7]
     @test sieve_03(7) == [2, 3, 5, 7]
 end
+
+
+@testset "hamming_distance.jl" begin
+    @test hamming_distance("ABC", "ABC") == 0
+    @test hamming_distance("ABD", "ABC") == 1
+end

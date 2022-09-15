@@ -9,4 +9,7 @@ export edit_distance
 include("sieve.jl")
 export sieve_01,sieve_02,sieve_03
 
+include("hamming_distance.jl")
+export hamming_distance
+
 end
