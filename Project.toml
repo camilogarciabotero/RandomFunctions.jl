@@ -5,6 +5,7 @@ version = "0.0.3"
 
 [deps]
 Primes = "27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae"
+SnoopPrecompile = "66db9d55-30c0-4569-8b51-7e840670fc0c"
 
 [compat]
 Primes = "0.5"
