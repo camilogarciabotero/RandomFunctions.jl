@@ -1,6 +1,6 @@
 """
-This functions takes two strings and calculates de edit distance, which is the number
-of changes of two stringsn when both display different lengths:
+This functions takes two strings and calculates the edit distance, which is the number
+of changes of two strings when both display different lengths:
 
 ```@example
     s1 = "ATCTCGT"

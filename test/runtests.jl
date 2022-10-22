@@ -11,6 +11,7 @@ end
 
 @testset "edit_distance.jl" begin
     @test edit_distance("ATCTCGT", "ACTCCTC")[1] == 3.0
+    @test edit_distance("ATCTCGT", "ACTCCTC")[2] == [0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0; 1.0 0.0 1.0 2.0 3.0 4.0 5.0 6.0; 2.0 1.0 1.0 1.0 2.0 3.0 4.0 5.0; 3.0 2.0 1.0 2.0 1.0 2.0 3.0 4.0; 4.0 3.0 2.0 1.0 2.0 2.0 2.0 3.0; 5.0 4.0 3.0 2.0 1.0 2.0 3.0 2.0; 6.0 5.0 4.0 3.0 2.0 2.0 3.0 3.0; 7.0 6.0 5.0 4.0 3.0 3.0 2.0 3.0]
 end
 
 @testset "sieve.jl" begin
@@ -23,4 +24,8 @@ end
 @testset "hamming_distance.jl" begin
     @test hamming_distance("ABC", "ABC") == 0
     @test hamming_distance("ABD", "ABC") == 1
+end
+
+@testset "shout.jl" begin
+    @test shout("goblin") == "GBLN"
 end

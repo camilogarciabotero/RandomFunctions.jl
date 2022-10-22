@@ -12,4 +12,7 @@ export sieve_01,sieve_02,sieve_03
 include("hamming_distance.jl")
 export hamming_distance
 
+include("shout.jl")
+export shout
+
 end
