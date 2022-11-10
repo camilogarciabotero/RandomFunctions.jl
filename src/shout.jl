@@ -1,5 +1,5 @@
 """
-This funciton capitalizes all letters and reomves vowels from a string.
+This function capitalizes all letters and removes vowels from a string.
 
 ```@example
     str = "goblin"
@@ -10,8 +10,3 @@ function shout(str::String)::String
     filtering(a) = filter(x -> x ∉("aeiouAEIOU"), a)
     ∘(uppercase, filtering)(str)
 end
-
-
-
-
-
