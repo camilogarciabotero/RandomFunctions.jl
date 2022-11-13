@@ -8,7 +8,7 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/camilogarciaboter/RandomFunctions.jl.git",
+    repo = "github.com/camilogarciabotero/RandomFunctions.jl.git",
 )
 
 
